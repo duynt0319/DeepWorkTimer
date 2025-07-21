@@ -13,14 +13,56 @@
     <Product>DeepWorkTimer</Product>
     <AssemblyTitle>DeepWorkTimer - Deep Work Timer</AssemblyTitle>
     <AssemblyDescription>A transparent countdown timer for Deep Work methodology with global hotkeys and multi-monitor support</AssemblyDescription>
-    <AssemblyCompany>Your Company</AssemblyCompany>
-    <AssemblyCopyright>Copyright © 2024</AssemblyCopyright>
+    <AssemblyCompany>Nguyen Thanh Duy</AssemblyCompany>
+    <AssemblyCopyright>Copyright © 2024 Nguyen Thanh Duy</AssemblyCopyright>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyInformationalVersion>1.0.0</AssemblyInformationalVersion>
     
-    <!-- Application Properties -->
-    <ApplicationIcon />
+    <!-- Self-Contained Deployment Properties -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <PublishTrimmed>false</PublishTrimmed>
+    <UseAppHost>true</UseAppHost>
+    
+    <!-- Windows Application Properties -->
+    <ApplicationIcon>Resources\DeepWorkTimer.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
     <StartupObject />
+    
+    <!-- Output Properties -->
+    <OutputPath>bin\$(Configuration)\</OutputPath>
   </PropertyGroup>
+
+  <!-- Conditional inclusion based on file existence -->
+  <PropertyGroup Condition="!Exists('Resources\DeepWorkTimer.ico')">
+    <ApplicationIcon />
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="!Exists('app.manifest')">
+    <ApplicationManifest />
+  </PropertyGroup>
+
+  <!-- Resources -->
+  <ItemGroup>
+    <None Remove="Resources\**" />
+    <EmbeddedResource Include="Resources\**" Condition="Exists('Resources')" />
+  </ItemGroup>
+
+  <!-- Application Manifest -->
+  <ItemGroup>
+    <None Update="app.manifest" Condition="Exists('app.manifest')">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <!-- Documentation files -->
+  <ItemGroup>
+    <Content Include="USER_GUIDE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
 </Project>

@@ -1,8 +1,7 @@
-using System;
-using System.Windows;
 using DeepWorkTimer.Models;
 using DeepWorkTimer.Services;
 using DeepWorkTimer.Utils;
+using System.Windows;
 
 namespace DeepWorkTimer
 {
@@ -89,10 +88,10 @@ namespace DeepWorkTimer
         protected override void OnSourceInitialized(EventArgs e)
         {
             base.OnSourceInitialized(e);
-            
+
             // Make window completely click-through (transparent to mouse events) with enhanced stability
             WindowUtils.EnsureClickThrough(this);
-            
+
             System.Diagnostics.Debug.WriteLine("?? Window made click-through with enhanced stability - no more flicker!");
         }
 
@@ -102,7 +101,7 @@ namespace DeepWorkTimer
         protected override void OnActivated(EventArgs e)
         {
             base.OnActivated(e);
-            
+
             // Re-apply click-through in case it was lost during activation
             WindowUtils.MakeWindowClickThrough(this);
         }
@@ -113,7 +112,7 @@ namespace DeepWorkTimer
         protected override void OnDeactivated(EventArgs e)
         {
             base.OnDeactivated(e);
-            
+
             // Ensure click-through remains active even when deactivated
             WindowUtils.MakeWindowClickThrough(this);
         }

@@ -75,12 +75,29 @@ namespace DeepWorkTimer.ViewModels
         /// <summary>
         /// Next phase name
         /// </summary>
-        public string NextPhaseName => NextPhase?.Name ?? "End";
+        public string NextPhaseName => NextPhase?.Name ?? "Work Day Ends";
 
         /// <summary>
-        /// Start time of the next phase
+        /// Start time of the next phase - or end time if it's the last phase
         /// </summary>
-        public string NextPhaseStartTime => NextPhase?.StartTime.ToString(@"hh\:mm") ?? "--:--";
+        public string NextPhaseStartTime
+        {
+            get
+            {
+                if (NextPhase != null)
+                {
+                    return NextPhase.StartTime.ToString(@"hh\:mm");
+                }
+
+                // If no next phase, show the end time of current phase (end of work day)
+                if (CurrentPhase != null)
+                {
+                    return CurrentPhase.EndTime.ToString(@"hh\:mm");
+                }
+
+                return "--:--";
+            }
+        }
 
         /// <summary>
         /// End time of the current phase
@@ -110,7 +127,8 @@ namespace DeepWorkTimer.ViewModels
                     return $"{current} until {endTime} | Next: {NextPhase.Name} at {nextTime}";
                 }
 
-                return $"{current} until {endTime}";
+                // For the last phase, show end of work day
+                return $"{current} until {endTime} | Work day ends at {endTime}";
             }
         }
 

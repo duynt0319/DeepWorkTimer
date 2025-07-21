@@ -1,5 +1,3 @@
-using System;
-
 namespace DeepWorkTimer.Models
 {
     /// <summary>
@@ -70,10 +68,10 @@ namespace DeepWorkTimer.Models
         {
             if (currentTime >= EndTime)
                 return TimeSpan.Zero;
-            
+
             if (currentTime < StartTime)
                 return EndTime - StartTime;
-            
+
             return EndTime - currentTime;
         }
     }
