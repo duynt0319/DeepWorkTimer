@@ -1,9 +1,7 @@
-using System;
+using DeepWorkTimer.Models;
 using System.Collections.ObjectModel;
-using System.Linq;
 using System.Windows.Media;
 using System.Windows.Threading;
-using DeepWorkTimer.Models;
 
 namespace DeepWorkTimer.ViewModels
 {

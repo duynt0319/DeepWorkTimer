@@ -7,7 +7,7 @@
         xmlns:vm="clr-namespace:DeepWorkTimer.ViewModels"
         mc:Ignorable="d"
         Title="DeepWork Timer" 
-        Height="650" Width="1150"
+        Height="430" Width="770"
         WindowStyle="None"
         AllowsTransparency="True"
         Background="Transparent"
@@ -29,35 +29,35 @@
         
         <!-- Main Countdown Timer - Clean & Large -->
         <TextBlock Text="{Binding RemainingTimeDisplay}" 
-                   FontSize="240" 
+                   FontSize="160" 
                    FontWeight="Bold"
                    Foreground="{Binding PhaseColor}"
                    HorizontalAlignment="Center"
                    FontFamily="Consolas, Monaco, 'Courier New'"
-                   Margin="0,0,0,30"
+                   Margin="0,0,0,20"
                    IsHitTestVisible="False">
             <TextBlock.Effect>
                 <DropShadowEffect Color="Black" 
                                  Direction="0" 
                                  ShadowDepth="0" 
-                                 BlurRadius="40" 
+                                 BlurRadius="26" 
                                  Opacity="0.8"/>
             </TextBlock.Effect>
         </TextBlock>
 
         <!-- Current Task Info -->
         <TextBlock Text="{Binding CurrentPhaseName}" 
-                   FontSize="52" 
+                   FontSize="34" 
                    FontWeight="SemiBold"
                    Foreground="White"
                    HorizontalAlignment="Center"
-                   Margin="0,0,0,16"
+                   Margin="0,0,0,11"
                    IsHitTestVisible="False">
             <TextBlock.Effect>
                 <DropShadowEffect Color="Black" 
                                  Direction="0" 
                                  ShadowDepth="0" 
-                                 BlurRadius="20" 
+                                 BlurRadius="13" 
                                  Opacity="1"/>
             </TextBlock.Effect>
         </TextBlock>
@@ -65,49 +65,49 @@
         <!-- Next Task Preview -->
         <StackPanel Orientation="Horizontal" 
                    HorizontalAlignment="Center"
-                   Margin="0,0,0,45"
+                   Margin="0,0,0,30"
                    IsHitTestVisible="False">
             <TextBlock Text="Next: " 
-                      FontSize="36" 
+                      FontSize="24" 
                       Foreground="#CCFFFFFF"
                       VerticalAlignment="Center"
                       IsHitTestVisible="False">
                 <TextBlock.Effect>
-                    <DropShadowEffect Color="Black" Direction="0" ShadowDepth="0" BlurRadius="12" Opacity="0.8"/>
+                    <DropShadowEffect Color="Black" Direction="0" ShadowDepth="0" BlurRadius="8" Opacity="0.8"/>
                 </TextBlock.Effect>
             </TextBlock>
             
             <TextBlock Text="{Binding NextPhaseName}" 
-                      FontSize="36" 
+                      FontSize="24" 
                       FontWeight="SemiBold"
                       Foreground="#CCFFFFFF"
                       VerticalAlignment="Center"
-                      Margin="0,0,16,0"
+                      Margin="0,0,11,0"
                       IsHitTestVisible="False">
                 <TextBlock.Effect>
-                    <DropShadowEffect Color="Black" Direction="0" ShadowDepth="0" BlurRadius="12" Opacity="0.8"/>
+                    <DropShadowEffect Color="Black" Direction="0" ShadowDepth="0" BlurRadius="8" Opacity="0.8"/>
                 </TextBlock.Effect>
             </TextBlock>
             
             <TextBlock Text="at" 
-                      FontSize="36" 
+                      FontSize="24" 
                       Foreground="#99FFFFFF"
                       VerticalAlignment="Center"
-                      Margin="0,0,10,0"
+                      Margin="0,0,7,0"
                       IsHitTestVisible="False">
                 <TextBlock.Effect>
-                    <DropShadowEffect Color="Black" Direction="0" ShadowDepth="0" BlurRadius="12" Opacity="0.8"/>
+                    <DropShadowEffect Color="Black" Direction="0" ShadowDepth="0" BlurRadius="8" Opacity="0.8"/>
                 </TextBlock.Effect>
             </TextBlock>
             
             <TextBlock Text="{Binding NextPhaseStartTime}" 
-                      FontSize="36" 
+                      FontSize="24" 
                       FontWeight="SemiBold"
                       Foreground="#CCFFFFFF"
                       VerticalAlignment="Center"
                       IsHitTestVisible="False">
                 <TextBlock.Effect>
-                    <DropShadowEffect Color="Black" Direction="0" ShadowDepth="0" BlurRadius="12" Opacity="0.8"/>
+                    <DropShadowEffect Color="Black" Direction="0" ShadowDepth="0" BlurRadius="8" Opacity="0.8"/>
                 </TextBlock.Effect>
             </TextBlock>
         </StackPanel>

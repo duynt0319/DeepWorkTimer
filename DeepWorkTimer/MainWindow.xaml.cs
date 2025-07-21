@@ -90,10 +90,32 @@ namespace DeepWorkTimer
         {
             base.OnSourceInitialized(e);
             
-            // Make window completely click-through (transparent to mouse events)
-            WindowUtils.MakeWindowClickThrough(this);
+            // Make window completely click-through (transparent to mouse events) with enhanced stability
+            WindowUtils.EnsureClickThrough(this);
             
-            System.Diagnostics.Debug.WriteLine("?? Window made click-through - mouse events will pass through");
+            System.Diagnostics.Debug.WriteLine("?? Window made click-through with enhanced stability - no more flicker!");
+        }
+
+        /// <summary>
+        /// Override OnActivated to ensure click-through remains active
+        /// </summary>
+        protected override void OnActivated(EventArgs e)
+        {
+            base.OnActivated(e);
+            
+            // Re-apply click-through in case it was lost during activation
+            WindowUtils.MakeWindowClickThrough(this);
+        }
+
+        /// <summary>
+        /// Override OnDeactivated to maintain click-through behavior
+        /// </summary>
+        protected override void OnDeactivated(EventArgs e)
+        {
+            base.OnDeactivated(e);
+            
+            // Ensure click-through remains active even when deactivated
+            WindowUtils.MakeWindowClickThrough(this);
         }
 
         /// <summary>
