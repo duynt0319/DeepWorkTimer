@@ -1,146 +1,62 @@
-# ?? DeepWorkTimer
+---
 
-**The ultimate productivity timer that stays out of your way**
+# 🧠 DeepWorkTimer
 
-A beautiful, transparent overlay timer that floats on your screen, helping you master the Deep Work methodology without ever interrupting your workflow.
+### **A Transparent Overlay Timer for True Focus**
 
 ---
 
-## ? What Makes DeepWorkTimer Special?
+## 🚀 Key Features
 
-?? **Never interrupts your work** - Completely click-through design  
-?? **Ghost overlay** - See it, but never accidentally click it  
-? **Instant positioning** - Move between monitors with simple hotkeys  
-?? **Color-coded phases** - Know exactly what to do at a glance  
-?? **Zero setup** - Works perfectly right out of the box  
-
----
-
-## ?? What You See
-
-### ?? **Focus Time** - Deep blue timer
-*Time to eliminate distractions and dive deep*
-
-### ?? **Short Break** - Golden yellow timer  
-*5 minutes to stretch, breathe, and reset*
-
-### ?? **Long Break** - Warm orange timer
-*15 minutes to step away and recharge*
-
-### ?? **Lunch Break** - Bright red timer
-*Time to fuel your body and mind*
-
-### ? **Light Tasks** - Soft gray timer
-*Handle emails, admin work, and planning*
+* 👻 **Ghost Mode** – Always-on-top, transparent, **click-through timer**
+* 🖥 **Multi-monitor support** – Quickly move across screens with **hotkeys**
+* 🎨 **Color-coded phases** – Instantly see what task mode you’re in
+* ⌨️ **Global hotkeys** – Works across all apps, even full-screen games
+* 📌 **No distractions** – No taskbar icon, no popups, just quiet presence
 
 ---
 
-## ? Instant Control (Global Hotkeys)
+## ⌨️ Global Hotkeys
 
-**Works from ANY application - even games!**
-
-| Hotkey | Action |
-|--------|---------|
-| `Ctrl+Alt+1-9` | ?? Jump to monitor 1-9 instantly |
-| `Ctrl+Alt+M` | ?? Move to next monitor |
-| `Ctrl+Alt+N` | ?? Move to previous monitor |
-| `Ctrl+Alt+C` | ?? Center on current monitor |
-| `Ctrl+Alt+P` | ? Set current monitor as favorite |
-
-*No need to alt-tab or interrupt your flow*
+| Hotkey                   | Action                           |
+| ------------------------ | -------------------------------- |
+| `Ctrl + Alt + Shift + T` | Toggle Ghost Mode                |
+| `Ctrl + Alt + M / N`     | Move to next / previous monitor  |
+| `Ctrl + Alt + 1–9`       | Jump to specific monitor         |
+| `Ctrl + Alt + C`         | Center on current monitor        |
+| `Ctrl + Alt + P`         | Set current monitor as preferred |
 
 ---
 
-## ?? Your Perfect Day (Pre-Configured)
+## 🎨 Phase Colors
 
-### ?? **Morning Power Block** `8:00 - 11:15`
-- **Focus #1-3** (75 minutes of deep work)
-- Smart breaks between sessions
-- *Get your hardest work done first*
-
-### ? **Midday Reset** `11:15 - 12:50`  
-- Light tasks and lunch
-- *Recharge for the afternoon*
-
-### ?? **Afternoon Deep Work** `12:50 - 16:05`
-- **Focus #4-6** (75 more minutes)  
-- Automatic break management
-- *Maintain momentum through the day*
-
-### ?? **Wind Down** `16:05 - 17:30`
-- Review and light tasks
-- *End your day organized*
-
-**Total: 12 focused work sessions = 150+ minutes of pure productivity**
+| Phase       | Color      |
+| ----------- | ---------- |
+| Focus       | DodgerBlue |
+| Short Break | Gold       |
+| Long Break  | Orange     |
+| Lunch Break | OrangeRed  |
+| Light Task  | LightGray  |
 
 ---
 
-## ?? Why You'll Love It
+## 🕒 How to Use
 
-### ?? **For Developers**
-- Never lose your place in code
-- Perfect for Pomodoro + Deep Work hybrid
-- Works seamlessly with IDEs
-
-### ?? **For Writers & Creators**  
-- Maintain creative flow
-- Visual reminder without distraction
-- Perfect writing session structure
-
-### ?? **For Students**
-- Structured study sessions
-- Break reminders you can't ignore
-- Perfect for exam preparation
-
-### ?? **For Remote Workers**
-- Professional time management
-- Clear work/break boundaries
-- Impress in video calls
+1. **Run the app** – Timer starts automatically
+2. **Use hotkeys** – Move or reposition across screens
+3. **Focus** – Let the subtle overlay guide your sessions
 
 ---
 
-## ?? Smart Features
+## 🖥 System Requirements
 
-? **Remembers everything** - Position, monitor, settings  
-? **Multiple monitor genius** - Perfect for modern setups  
-? **Completely invisible** - No taskbar icon, no clutter  
-? **Click-through magic** - Never interferes with your work  
-? **Always visible** - Stays on top of everything  
-? **Auto-saves** - Your preferences stick forever  
+* ✅ Windows 10 or 11
+* ✅ Supports up to 9 monitors
+* ✅ Works with any application (browsers, IDEs, games, etc.)
 
 ---
 
-## ?? Quick Start
+> ⚡ **No notifications. No windows. No distractions.**
+> Just you, your work, and a gentle sense of time.
 
-1. **Download & Run** - Timer starts immediately
-2. **Position it** - Drag to your preferred spot  
-3. **Set favorite monitor** - Press `Ctrl+Alt+P`
-4. **Start working** - Follow the colors!
-
-*That's it. No accounts, no configuration, no complexity.*
-
----
-
-## ?? Works On
-
-- ? Windows 10
-- ? Windows 11  
-- ? Any monitor setup (1-9 monitors)
-- ? All applications (games, browsers, IDEs)
-
----
-
-## ?? The Deep Work Promise
-
-**Stop context switching. Start deep work.**
-
-DeepWorkTimer doesn't just count down time - it creates the perfect environment for sustained focus. When you see that blue timer, your brain knows: *this is deep work time*.
-
-No notifications. No pop-ups. No interruptions.  
-Just you, your work, and the gentle guidance of time.
-
-**Ready to 10x your productivity?**
-
----
-
-*Transform how you work. One focused session at a time.* ??
+**Start deep. Stay focused.** 🧠
